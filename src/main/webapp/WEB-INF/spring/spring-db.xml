@@ -16,7 +16,7 @@
     </jdbc:initialize-database>
     <tx:annotation-driven/>
 
-    <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
+    <context:property-placeholder location="classpath:db/heroku.properties" system-properties-mode="OVERRIDE"/>
 
    <!--  <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
          <property name="driverClassName" value="${driverClassName}"/>
