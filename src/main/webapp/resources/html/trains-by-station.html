@@ -22,7 +22,7 @@
 
                 <tr class="success" ng-repeat="train in trains | filter:filterAdvanced2">
                     <td>
-                        <img src="/allwayticket/resources/images/trains_mini.png" alt="{{train.trainType}}"
+                        <img src="/resources/images/trains_mini.png" alt="{{train.trainType}}"
                              title="{{train.trainType}}"/>
                     </td>
                     <td><a href="#!/stations/{{train.id}}"> {{train.id}}</a></td>
@@ -38,7 +38,7 @@
                         <span class="_time">{{train.timeDeparture==null ? ' -':train.timeDeparture }}</span>
                     </td>
 
-                    <td><a href="#"><img src="/allwayticket/resources/images/chart.png"
+                    <td><a href="#"><img src="/resources/images/chart.png"
                                          alt="Traffic schedule" title="Traffic schedule"></a></td>
                     <td><a href="#" class="btn btn-success "> <span
                             class="glyphicon-shopping-cart glyphicon"></span>

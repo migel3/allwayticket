@@ -1,8 +1,8 @@
 var schedulerApp = angular.module('schedulerApp', ['ngRoute', 'ui.timepicker', 'ui.bootstrap']);
 schedulerApp
     .constant('baseUrl', {
-        train: '/allwayticket/trains',
-        station: '/allwayticket/stations'
+        train: '/trains',
+        station: '/stations'
     })
     .controller('schedulerCtrl', [
         '$scope', '$log', '$route', '$routeParams', '$location', 'stationFactory',
