@@ -1,0 +1,72 @@
+<!-- search table route-->
+<div id="table_search_route">
+
+    <div ng-if="(trains.length!=0 && trains.length!==undefined)">
+
+        <h1 class="schedule"> {{trains[0].stationFromSearch}} - {{trains[0].stationToSearch}}
+            <br><span>train schedule</span>
+        </h1>
+        <hr/>
+
+        <div>
+            <table class="schedule_table table table-hover table-condensed  table-striped">
+                <thead>
+                <tr class="active">
+                    <th class="col-xs-1">type</th>
+                    <th>number</th>
+                    <th>route</th>
+                    <th>from</th>
+                    <th>to</th>
+                    <th>on the way</th>
+                    <th>schedule</th>
+                    <th>buy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr class="success" ng-repeat="train in trains| filter:filterAdvanced1 ">
+                    <!--"| filter:filterAdvanced1"-->
+                    <td>
+                        <img src="/allwayticket/resources/images/trains_mini.png" alt="{{train.trainType}}"
+                             title="{{train.trainType}}"/>
+                    </td>
+                    <!-- <td>
+                         <img src="<spring:url value="/resources/imatrains.png.png"/>" alt="{{train.trainType}}"
+                         title="{{train.trainType}}"/>
+                     </td>-->
+                    <td><a href="#!/stations/{{train.id}}"> {{train.id}}</a></td>
+                    <td><a href="#!/train-search-by-station/{{train.trainBeginFromStation}}">{{train.trainBeginFromStation}}</a>
+                        → <a
+                                href="#!/train-search-by-station/{{train.trainEndToStation}}">{{train.trainEndToStation}}</a>
+                    </td>
+                    <td><span
+                            class="_time">{{train.timeDeparture}}</span><br><a
+                            class="small_font_station"
+                            href="#!/train-search-by-station/{{train.stationFromSearch}}">
+                        {{train.stationFromSearch}}</a>
+                    </td>
+                    <td><span class="_time">{{train.timeArrival}}</span><br><a
+                            class="small_font_station"
+                            href="#!/train-search-by-station/{{train.stationToSearch}}">{{train.stationToSearch}}</a>
+                    </td>
+                    <td>{{train.onTheWay}}
+                    </td>
+                    <!-- <td><a href="#"><img src="<spring:url value="/resources/imachart.png.png"/>"
+                         alt="Traffic schedule" title="Traffic schedule"></a></td>-->
+                    <td><a href="#"><img src="/allwayticket/resources/images/chart.png"
+                                         alt="Traffic schedule" title="Traffic schedule"></a></td>
+                    <td><a href="#" class="btn btn-success "> <span
+                            class="glyphicon-shopping-cart glyphicon"></span>
+                        buy</a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div ng-if="trains.length==0"><h1 class="no_schedule">Sorry, no trains from this route....</h1></div>
+
+
+</div>

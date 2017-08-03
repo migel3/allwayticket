@@ -1,0 +1,38 @@
+<div id="table_stations" >
+
+
+    <h1 class="stations">{{stations[0].name}}-{{stations[stations.length-1].name}}
+        <br><span> Train №{{trainId}}</span>
+    </h1>
+    <hr/>
+
+    <div>
+        <table class="schedule_table table table-hover table-condensed  table-striped">
+            <thead>
+            <tr class="active">
+                <th class="col-xs-1">№</th>
+                <th>station</th>
+                <th>arrival</th>
+                <th>stop</th>
+                <th>departure</th>
+                <th>on the way</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr class="success" ng-repeat="station in stations">
+                <td>{{station.position}}</td>
+                <td><a href="#!/train-search-by-station/{{station.name}}"> {{station.name}}</a></td>
+                <td>{{station.timeArrival==null ? ' -':station.timeArrival}}</td>
+                <td>{{station.timeStop==null ? '-':station.timeStop}}</td>
+                <td>{{station.timeDeparture==null ? ' -':station.timeDeparture }}</td>
+                <td ng-if="station.onTheWay!=null">{{station.onTheWay}}</td>
+                <td ng-if="station.onTheWay==null">-</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
