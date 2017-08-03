@@ -1,10 +1,11 @@
 package by.alex.allwayticket.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Collection;
 
 @Entity
-public class Role {
+public class Role implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

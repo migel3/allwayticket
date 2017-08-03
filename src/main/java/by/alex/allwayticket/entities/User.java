@@ -1,12 +1,13 @@
 package by.alex.allwayticket.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Set;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Serializable {
 //    public static final int START_SEQ = 100000;
 
     @Id

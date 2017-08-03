@@ -1,13 +1,14 @@
 package by.alex.allwayticket.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 import java.util.Map;
 
 
 @Entity
-public class Station {
+public class Station implements Serializable {
 
     @Id
     @GeneratedValue
