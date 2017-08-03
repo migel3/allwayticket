@@ -6,7 +6,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title> Tickets PRO | Home</title>
+    <title> Allway Tickets PRO | Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="<spring:url value="/resources/bower_components/bootstrap/dist/css/bootstrap.css"/>" rel='stylesheet' type='text/css'/>
     <link href="<spring:url value="/resources/css/style.css"/>" rel='stylesheet' type='text/css'/>

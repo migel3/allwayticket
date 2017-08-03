@@ -5,7 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <html ng-app="schedulerApp">
 <head>
-    <title> Tickets PRO | Home</title>
+    <title>Allway Tickets PRO | Trains</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 

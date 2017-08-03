@@ -4,7 +4,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <html>
 <head>
-	<title> Tickets PRO | Register</title>
+	<title> Allway Tickets PRO | Register</title>
 	<link href="<spring:url value="/resources/css/bootstrap.css"/>" rel='stylesheet' type='text/css'/>
 	<link href="<spring:url value="/resources/css/style.css"/>" rel='stylesheet' type='text/css'/>
 

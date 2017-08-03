@@ -5,7 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Allway Tickets PRO | Air</title>
     <link href="<spring:url value="/resources/css/bootstrap.css"/>" rel='stylesheet' type='text/css'/>
     <link href="<spring:url value="/resources/css/jquery-ui.min.css"/>" rel='stylesheet' type='text/css'/>
     <link href="<spring:url value="/resources/css/style.css"/>" rel='stylesheet' type='text/css'/>
