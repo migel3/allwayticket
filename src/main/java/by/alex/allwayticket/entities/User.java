@@ -10,7 +10,7 @@ public class User {
 //    public static final int START_SEQ = 100000;
 
     @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
+   @GeneratedValue
    /* @SequenceGenerator(name = "global_seq", sequenceName = "global_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "global_seq")
 */
