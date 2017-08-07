@@ -14,7 +14,7 @@
 <body>
 <jsp:include page="fragments/headerBody.jsp"/>
 <div class="pic">
-    <p class="mockText">Page in development...</p>
+    <p class="mockText">The page is being developed...</p>
     <img src="<spring:url value="/resources/images/925030.gif"/>" width="160" height="160"/>
 
 </div>
